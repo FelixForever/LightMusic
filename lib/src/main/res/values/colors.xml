@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="material_white_normal">#FFFFFFFF</color>
+    <color name="material_white_secondary">#B3FFFFFF</color>
+    <color name="material_white_hint">#4DFFFFFF</color>
+    <color name="material_white_disable">#4DFFFFFF</color>
+    <color name="material_white_dividers">#1FFFFFFF</color>
+
+    <color name="material_black_normal">#DF000000</color>
+    <color name="material_black_secondary">#8A000000</color>
+    <color name="material_black_hint">#43000000</color>
+    <color name="material_black_disable">#43000000</color>
+    <color name="material_black_dividers">#1F000000</color>
+
+    <!--
+    white
+    0.7*256=179.2=B3
+    0.3*256=76.8=4D
+    0.12*256=30.72=1F
+
+    black
+    0.87*256=222.72=DF
+    0.54*256=138.24=8A
+    0.26*256=66.56=43
+    -->
+</resources>

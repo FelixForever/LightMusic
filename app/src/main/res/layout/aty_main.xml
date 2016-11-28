@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/dl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toobar"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:visibility="visible"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:title="我的音乐"
+                    app:titleMargin="0dp"
+                    app:titleTextAppearance="@style/tab_text_style"
+                    app:titleTextColor="@color/material_white_normal"
+                    >
+
+
+                </android.support.v7.widget.Toolbar>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:tabPadding="0dp"
+                    app:tabSelectedTextColor="@color/material_white_normal"
+                    app:tabTextColor="@color/material_white_secondary">
+
+                </android.support.design.widget.TabLayout>
+            </android.support.design.widget.AppBarLayout>
+
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                </android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:id="@+id/ll_music"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/colorPrimary"
+                    app:layout_scrollFlags="scroll">
+
+                    <ImageView
+                        android:id="@+id/iv_album"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="8dp"
+                        android:src="@drawable/v_def_music"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="不是每个恋曲都有美好回忆"
+                            android:textColor="@color/material_black_normal"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_artist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="林志颖"
+                            android:textColor="@color/material_black_secondary"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_previous"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+
+                        android:src="@drawable/ic_fast_rewind_black_24dp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/sel_play"/>
+
+                    <ImageView
+                        android:id="@+id/iv_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_fast_forward_black_24dp"/>
+                </LinearLayout>
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nv_main"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/main"></android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
